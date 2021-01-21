@@ -40,5 +40,5 @@ event.preventDefault();
 navigator.geolocation.getCurrentPosition(handlePosition);
 }
 
-let location=document.querySelector("#marker");
-location.addEventListener("click",retrievePosition);
+let locationer=document.querySelector("#marker");
+locationer.addEventListener("click",retrievePosition);
