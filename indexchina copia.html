@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/chinastyle.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d104ce1bed.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <style>
+    body {
+      font-family: 'Barlow Condensed', sans-serif;
+    }
+  </style>
+  <title> </title>
+</head>
+
+<body>
+
+  <div class="weather-app">
+
+
+
+
+
+    <div class="forecast">
+      <div class="row">
+        <div class="col-1">
+          <ul>
+            <li> mon</li>
+            <li> <i class="far fa-sun"></i></li>
+            <li> 5ºC</li>
+          </ul>
+        </div>
+        <div class="col-1">
+          <ul>
+            <li> tue</li>
+            <li> <i class="fas fa-wind"></i></li>
+            <li> 5ºC</li>
+          </ul>
+        </div>
+        <div class="col-1">
+          <ul>
+            <li> wed</li>
+            <li> <i class="far fa-snowflake"></i></li>
+            <li> 5ºC</li>
+          </ul>
+        </div>
+        <div class="col-1">
+          <ul>
+            <li> thu</li>
+            <li> <i class="fas fa-cloud"></i></li>
+            <li> 5ºC</li>
+          </ul>
+        </div>
+        <div class="col-1">
+          <ul>
+            <li> fri</li>
+            <li> <i class="fas fa-cloud-showers-heavy"></i></li>
+            <li> 5ºC</li>
+          </ul>
+        </div>
+        <div class="col-1">
+          <ul>
+            <li> sat</li>
+            <li> <i class="fas fa-poo-storm"></i></li>
+            <li> 5ºC</li>
+          </ul>
+        </div>
+        <div class="col-1">
+          <ul>
+            <li> sun</li>
+            <li> <i class="fas fa-bolt"></i></li>
+            <li> 5ºC</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="container">
+      <h1>
+        <strong> LAGOS</strong>
+      </h1>
+      <h2>
+        <span class="high-temp-icon"> <i class="fas fa-temperature-high"></i></span>
+        <span id="h2temp">20ºC</span>
+      </h2>
+      <h3>
+        <n class="low-temp-icon"><i class="fas fa-temperature-low"></i></n>
+        <span id="h3temp">25ºC</span>
+      </h3>
+    </div>
+
+
+
+
+
+
+
+    <div class="footer">
+      <form action="" id="city-search">
+        <input type="search" id="searcher">
+        <i class="fas fa-globe-africa"></i>
+      </form>
+
+      <div class="location-button">
+        <button id="location">
+          <i class="fas fa-map-marker-alt" id="marker"></i>
+      </div>
+    </div>
+
+
+
+
+
+    <script src="src/china.js"></script>
+</body>
+
+</html>
