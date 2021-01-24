@@ -11,8 +11,12 @@
 
 
 }
-
-
+strong{
+  color: grey;
+}
+.col-3{
+  text-align: center;
+}
 ul{
   list-style-type: none;
 }
