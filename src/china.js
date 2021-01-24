@@ -25,6 +25,12 @@ function showTemperature(response){
  h3.innerHTML= tempMin;
  let h1 = document.querySelector("h1");
  h1.innerHTML = response.data.name;
+ let windElement=document.querySelector("#wind");
+ windElement.innerHTML= Math.round(response.data.wind.speed);
+ let humidityElement=document.querySelector("#humidity");
+ humidityElement.innerHTML=Math.round(response.data.main.humidity);
+ let descriptElement=document.querySelector("#descript");
+ descriptElement.innerHTML=response.data.weather[0].description;
 }
 
 function handlePosition(position){

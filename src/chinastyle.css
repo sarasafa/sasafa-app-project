@@ -14,34 +14,54 @@
 strong{
   color: grey;
 }
-.col-3{
-  text-align: center;
-}
-ul{
-  list-style-type: none;
-}
-
-.row{
-  width:500px;
-}
 
 .col-1{
   margin: 14px;
 }
 
-h1, h2,h3{
- 
-  text-align: center;
+.col-3{
+  text-align: right;
+  line-height: 40px;
+  padding: unset;
+  
 }
+.col-4{
+  text-align: left;
+  line-height: 40px;
+}
+.col-5{
+  text-align:center;
+  line-height: 30px;
+}
+ul{
+  list-style-type: none;
+}
+#descript{
+  color: blue;
+  
+
+}
+.row{
+  width:500px;
+}
+
+
+
+  
+
+h1{
+  text-align:center;
+
+}
+
 h6{
   text-align:center;
   padding: 25px;
   
-  
 }
 .container{
   display: block;
-  margin: 50px auto 365px;
+  margin: 45px auto 350px;
 }
 .footer{
  padding:40px 10px 0px 235px;
@@ -99,6 +119,7 @@ form:hover{
 
 form:hover input{
     display: block;
+    
 }
 
 form:hover .fa-globe-africa {
