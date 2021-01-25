@@ -6,7 +6,6 @@ function search (event){
   let apiKey="6dd93c3c2cfec70598d31537cca13e7f";
   let units="metric";
   let city= cityInput.value;
-  console.log (city);
   let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
   axios.get(`${apiUrl}`).then(showTemperature);
 }
@@ -31,6 +30,10 @@ function showTemperature(response){
  humidityElement.innerHTML=Math.round(response.data.main.humidity);
  let descriptElement=document.querySelector("#descript");
  descriptElement.innerHTML=response.data.weather[0].description;
+ let iconElement=document.querySelector("#iconImage");
+ iconElement.setAttribute=("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+
+  console.log(`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 }
 
 function handlePosition(position){
