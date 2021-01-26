@@ -30,10 +30,10 @@ function showTemperature(response){
  humidityElement.innerHTML=Math.round(response.data.main.humidity);
  let descriptElement=document.querySelector("#descript");
  descriptElement.innerHTML=response.data.weather[0].description;
- let iconElement=document.querySelector("#iconImage");
- iconElement.setAttribute=("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
-
-  console.log(`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+ let iconElement=document.querySelector("#icon");
+ iconElement.setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+ iconElement.setAttribute("alt", response.data.weather[0].description);
+  console.log(response.data.weather[0].description);
 }
 
 function handlePosition(position){
