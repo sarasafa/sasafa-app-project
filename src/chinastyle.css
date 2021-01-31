@@ -49,6 +49,7 @@ ul{
 h1{
   text-align:center;
   letter-spacing: -2px;
+  text-transform:capitalize;
 }
 h2{
  padding: 20px;
@@ -73,15 +74,9 @@ h6{
  background-blend-mode: lighten;
 }
 
-
-
-
-
-
-
 .footer{
  padding:40px 10px 0px 235px;
- margin: -70px 0px 10px 10px; 
+ margin: -70px 0px -40px 10px; 
 }
 form{
     position: relative;
@@ -95,6 +90,7 @@ form{
     border-radius: 25px;
     border: 1px solid black;
     padding: 5px;
+    
 }
 
 input{
@@ -108,6 +104,7 @@ input{
     font-size: absolute;
     border-radius: 18px;
     padding: 0 20px;
+    pointer-events: visible;
 }
 
 .fa-globe-africa{
@@ -147,17 +144,35 @@ form:hover .fa-globe-africa {
     height: 50px;
     background: white;
     border-radius: 25px;
-    border: 1px solid black;
+    border: 1px solid rgb(5, 0, 0);
 }
 .location-button{
   margin: 5px auto;
 }
 #tempChoice{
     position: relative;
-    left: 50%;
+    top:-54px;
+    left: 84%;
     width: 50px;
     height: 50px;
     background: white;
     border-radius: 25px;
-    border: 1px solid black;
+    border: 1px solid rgb(5, 0, 0);
 }
+
+.units .active { 
+cursor:pointer;
+text-decoration: none;
+color: rgb(5, 0, 0);
+}
+.units .active:hover{
+  text-decoration:none;
+}  
+#fahrenheit-link {
+  text-decoration: none;  
+}
+#celsius-link{
+text-decoration: none;
+}
+
+  
