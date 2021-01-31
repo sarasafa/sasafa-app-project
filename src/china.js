@@ -1,13 +1,57 @@
+function formatDate(timestamp){
+  let date = new Date(timestamp);
+  let hours =date.getHours();
+  if (hours <10){hours = `0${hours}`;}
+  let minutes = date.getMinutes();
+  if (minutes <10){minutes = `0${minutes}`;}
+   return `${hours}:${minutes}`;
+}
+
+
+
+
+
+
+
+function displayForecast(response){
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = null;
+  let forecast = null;
+  
+  for (let index  = 0; index <4; index++){
+  forecast = response.data.list[index];
+  forecastElement.innerHTML += `
+        <div class="col-2">
+          <ul>
+            <li> ${formatDate(forecast.dt*1000)}</li>
+            <img src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png"/>
+            <li> ${Math.round(forecast.main.temp_max)}º<strong>${Math.round(forecast.main.temp_min)}º</strong></li>
+          </ul>
+        </div>`;
+
+
+  }
+  console.log(forecast);
+  
+  
+    
+}
+
+
+
+
 function search (event){
   event.preventDefault();
   let cityInput = document.querySelector("#searcher");
   let h1 = document.querySelector("h1");
   h1.innerHTML = cityInput.value;
   let apiKey="6dd93c3c2cfec70598d31537cca13e7f";
-
   let city= cityInput.value;
   let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
   axios.get(`${apiUrl}`).then(showTemperature);
+  apiUrl=`https:api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=${units}`;
+  axios.get(apiUrl).then(displayForecast);
+
 }
 let units="metric";
 let searchForm = document.querySelector("#city-search");
@@ -35,14 +79,8 @@ function showTemperature(response){
  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
-//function showPollution(event){
-//let latitude= position.coords.latitude;
-//let longitude=position.coords.longitude;
-//let apiKey="6dd93c3c2cfec70598d31537cca13e7f";
-//let url=`http://api.openweathermap.org/data/2.5/air_pollution?lat=${latitude}&lon=${longitude}&appid=${apikey}`;
-//}
-//let qualityElement=document.querySelector("#airPollution");
-//qualityElement.innerHTML=showPollution();
+
+
 
 
 
