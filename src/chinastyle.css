@@ -13,7 +13,7 @@ strong{
   color: rgb(180, 176, 176);
 }
 .boxed{
-  position:relative;
+  position:static;
   border: 1px solid white;
   padding: 3px;
   height:146px;
@@ -21,15 +21,11 @@ strong{
   left: 353px;
   right: 16px;
 }
-
-
 .col-2{
   display:inline-block;
   margin-bottom: -30px;
   margin-right: 35px;
   padding:10px;
-  
-
 }
 .col-3{
   text-align: right;
@@ -41,11 +37,9 @@ strong{
 }
 .col-5{
   text-align:center; 
-
 }
 ul{
-  list-style-type: none; 
-  
+  list-style-type: none;   
 }
 img{
   width: 50px;
@@ -56,11 +50,8 @@ img{
   word-spacing: 2px;
 }
 #icon{
-  width:60px;
-  
+  width:60px;  
 }
- 
-
 .fa-tint{
   margin: 60px 0;
 }
@@ -76,14 +67,12 @@ h6{
   text-align:center;
   padding: 16px;  
 }
-
 .container{
-  position: relative;
+  position: static;
   display: block;
-  margin: 73px auto 220px; 
+  margin: 73px auto 218px; 
   width: 92%;
 }
-
 .iconBox{
   border:1px solid rgb(180, 176, 176);
   border-radius: 50%;
@@ -93,7 +82,6 @@ h6{
  background-image: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
  background-blend-mode: lighten;
 }
-
 .footer{
  position: relative;
  padding:44px 10px 0px 222px;
@@ -110,10 +98,8 @@ form{
     box-sizing: border-box;
     border-radius: 25px;
     border: 1px solid black;
-    padding: 5px;
-    
+    padding: 5px;    
 }
-
 input{
     position: absolute;
     width: 100%;
@@ -127,7 +113,6 @@ input{
     padding: 0 20px;
     pointer-events: visible;
 }
-
 .fa-globe-africa{
     box-sizing: border-box;
     padding:12px;
@@ -140,24 +125,19 @@ input{
     font-size: 1.4em;
     transition: all ease;
 }
-
 form:hover{
     width: 160px;
     cursor: pointer;
 }
-
 form:hover input{
-    display: block; 
-   
+    display: block;    
 }
-
 form:hover .fa-globe-africa {
     background:linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
 }
 .fa-map-marker-alt{
   font-size: 25px;
 }
-
 #locationer{
     position: relative;
     left: 50%;
@@ -180,7 +160,6 @@ form:hover .fa-globe-africa {
     border-radius: 25px;
     border: 1px solid rgb(5, 0, 0);
 }
-
 .units .active { 
 cursor:pointer;
 text-decoration: none;
